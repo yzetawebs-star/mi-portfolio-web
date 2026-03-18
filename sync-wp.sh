@@ -1,6 +1,16 @@
 #!/bin/bash
-echo "Sincronizando wp-content..."
+# Script para sincronizar wp-content sin uploads
+# Ejecutar desde la raíz del proyecto WordPress
+
+echo "🔄 Sincronizando wp-content..."
+
+# Añadir cambios
 git add wp-content/
-git commit -m "Sync: $(date)" 2>/dev/null
+
+# Commit con mensaje automático
+git commit -m "Sync: $(date '+%Y-%m-%d %H:%M')" 2>/dev/null
+
+# Push si hay cambios
 git push origin master 2>/dev/null
-echo "Listo"
+
+echo "✅ Sincronizado"
