@@ -1,9 +1,40 @@
-# WordPress
+# WordPress Core (no versionar)
 wp-config.php
+wp-admin/
+wp-includes/
+*.php
+license.txt
+readme.html
+licencia.txt
+robots.txt
+xmlrpc.php
+wp-activate.php
+wp-blog-header.php
+wp-comments-post.php
+wp-cron.php
+wp-links-opml.php
+wp-load.php
+wp-login.php
+wp-mail.php
+wp-settings.php
+wp-signup.php
+wp-trackback.php
+index.php
+wordfence-waf.php
+
+# Contenido dinámico
 wp-content/uploads/
 wp-content/cache/
 wp-content/backup/
-*.log
+wp-content/et-cache/
+wp-content/wflogs/
+wp-content/upgrade/
+wp-content/tmp/
+
+# Installer
+dup-installer/
+*_installer*.php
+*_backup*.php
 
 # Sistema
 .DS_Store
@@ -12,10 +43,12 @@ Thumbs.db
 # Entorno
 .env
 .env.local
-*.local
 
 # IDE
 .vscode/
 .idea/
 *.swp
-*.swo
+
+# Logs
+*.log
+error_log
